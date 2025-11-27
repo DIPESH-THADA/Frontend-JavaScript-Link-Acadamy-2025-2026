@@ -4,7 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="./image/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="./image/logo.webp" />
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- ======= google font ======== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>About You</title>
 </head>
 
@@ -13,7 +21,7 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="./image/logo.png" alt="">
+                <img src="./image/logo.webp" alt="logo" width="120px" height="auto">
             </div>
             <div>
                 <a href=" #">Home</a></li>
@@ -23,137 +31,174 @@
             </div>
         </nav>
     </header>
-    <hr>
     <!-- ================ MAIN CONTENT SECTION ================ -->
     <div class="container">
         <div class="title">
             <h1>Air Max</h1>
-            <div class="rating" style="display: flex; align-items: center;">
-                <img src="./icons/rating.png" alt="" width="70px" height="auto" style="display:inline-block">
+            <div class="rating">
+                <img src="./icons/rating.png" alt="rating">
                 <span>(4.5)</span>
             </div>
         </div>
-        <img src="./image/air-max.webp" alt="" width="500px" height="auto">
-        <div class="details">
-            <h3>Price: 499RON</h3>
-            <span>Availability: In Stock</span>
-            <p class="description">Description: The Air Max is a stylish and comfortable sneaker that is perfect
-                for everyday wear.</p>
-            <br>
-            <label for="size">Size:</label>
-            <input type="number" min="36" value="36">
-            <button>Add to Cart</button>
-            <div class="more_image">
-                <img src="./image/air-max4.webp" alt="" width="100px" height="auto">
-                <img src="./image/air-max2.webp" alt="" width="100px" height="auto">
-                <img src="./image/air-max3.webp" alt="" width="100px" height="auto">
-                <img src="./image/air-max-5.webp" alt="" width="100px" height="auto">
-            </div>
-            <div class="item_description">
-                <h2>Product Description</h2>
-                <p class="description"><strong>The Nike Air Max Alpha Trainer</strong> Men's Training Shoe offers <br>
-                    exceptional comfort and
-                    support during intense workouts. Air Max cushioning, <br>a solid upper, and a durable outsole
-                    guarantee
-                    stability and traction, making it ideal for the gym and CrossFit workouts.</p>
-                <h2>Product Specifications</h2>
-                <ul>
-                    <li>Brand: Nike</li>
-                    <li>Model: Air Max Alpha Trainer</li>
-                    <li>Color: Black/White</li>
-                    <li>Size: 36-45</li>
-                    <li>Weight: 300g</li>
-                </ul>
-                <div class="reviews">
-                    <h2>Customer Reviews</h2>
-                    <div class="review-1" style="display: flex;">
-                        <img src="./icons/rating.png" alt="" width="40px" height="auto">
-                        <p><strong>John D.</strong> - "These shoes are amazing! Very comfortable and great for my
-                            workouts."</p>
-                    </div>
+        <div class="product-details">
+            <div class="product-image">
+                <div class="top">
+                    <img src="./image/air-max.webp" alt="air-max">
+                    <img src="./image/air-max4.webp" alt="air-max4">
                 </div>
-                <div class="review-2" style="display: flex;">
-                    <img src="./icons/rating.png" alt="" width="40px" height="auto">
+                <div class="down">
+                    <img src="./image/air-max2.webp" alt="air-max2">
+                    <img src="./image/air-max3.webp" alt="air-max3">
+                    <img src="./image/air-max-5.webp" alt="air-max-5">
+                </div>
+            </div>
+
+            <div class="details-description">
+                <div class="details box">
+                    <div class="price-to-btn"></div>
+                    <h3>Price: 499 RON</h3>
+                    <span>Availability: In Stock</span>
+                    <p class="description">Description: The Air Max is a stylish
+                        and comfortable sneaker that is perfect
+                        for everyday wear.</p>
+
+                    <label for="size">Size:</label>
+                    <div class="size">
+                        <button class="size-btn" type="button" aria-selected="false" data-test-id="product-size"
+                            data-test-value="38">38</button>
+                        <button class="size-btn" type="button" aria-selected="false" data-test-id="product-size"
+                            data-test-value="39">39</button>
+                        <button class="size-btn" type="button" aria-selected="false" data-test-id="product-size"
+                            data-test-value="40">40</button>
+                        <button class="size-btn" type="button" aria-selected="false" data-test-id="product-size"
+                            data-test-value="41">41</button>
+                        <button class="size-btn" type="button" aria-selected="false" data-test-id="product-size"
+                            data-test-value="42">42</button>
+                        <button class="size-btn" type="button" aria-selected="false" data-test-id="product-size"
+                            data-test-value="43">43</button>
+                        <button class="size-btn" type="button" aria-selected="false" data-test-id="product-size"
+                            data-test-value="44">44</button>
+                        <button class="size-btn" type="button" aria-selected="false" data-test-id="product-size"
+                            data-test-value="45">45</button>
+                    </div>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+
+                <div class="item_description box">
+                    <h2>Product Description</h2>
+                    <p class="description"><strong>The Nike Air Max Alpha Trainer</strong> Men's Training Shoe offers
+                        exceptional comfort and
+                        support during intense workouts. Air Max cushioning, a solid upper, and a durable outsole
+                        guarantee
+                        stability and traction, making it ideal for the gym and CrossFit workouts.
+                    </p>
+                    <h2>Product Specifications</h2>
+                    <ul>
+                        <li>Brand: Nike</li>
+                        <li>Model: Air Max Alpha Trainer</li>
+                        <li>Color: Black/White</li>
+                        <li>Size: 36-45</li>
+                        <li>Weight: 300g</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="costumer-review">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <img src="./icons/rating.png" alt="rating">
+                    <p><strong>John D.</strong> - "These shoes are amazing! Very comfortable and great for my
+                        workouts."</p>
+                </div>
+
+                <div class="review">
+                    <img src="./icons/rating.png" alt="rating">
                     <p><strong>Sarah K.</strong> - "I love the design and the cushioning is top-notch. Highly
                         recommend!"</p>
                 </div>
             </div>
 
         </div>
+
         <!-- ================ RELATED PRODUCTS SECTION ================ -->
-        <ul>
-            <div class="related-products">
-                <h2>Related Products</h2>
-                <li></li>
-                <div class="product-1">
-                    <img src="./image/air-force.jpg" alt="" width="150px" height="auto">
-                    <h4>Air force</h4>
-                    <span>Price: 599RON</span>
-                </div>
+        <div class="related-products">
+            <h2>Related Products</h2>
+            <ul class="products-list">
+                <li>
+                    <div class="product">
+                        <img src="./image/air-force.jpg" alt="air-force">
+                        <h4>Air force</h4>
+                        <span>Price: 599RON</span>
+                    </div>
                 </li>
                 <li>
-                    <div class="product-2">
-                        <img src="./image/airforce2.jpg" alt="" width="150px" height="auto">
+                    <div class="product">
+                        <img src="./image/airforce2.jpg" alt="airforce2">
                         <h4>Air Force 1</h4>
                         <span>Price: 549RON</span>
                     </div>
                 </li>
                 <li>
-                    <div class="product-3">
-                        <img src="./image/nike1.jpg" alt="" width="150px" height="auto">
+                    <div class="product">
+                        <img src="./image/nike1.jpg" alt="nike1">
                         <h4>NIKE DUNK LOW GTX</h4>
                         <span>Price: 479RON</span>
                     </div>
                 </li>
                 <li>
-                    <div class="product-4">
-                        <img src="./image/addidas.jpg" alt="" width="150px" height="auto">
+                    <div class="product">
+                        <img src="./image/addidas.jpg" alt="addidas">
                         <h4>Adidas Superstar</h4>
                         <span>Price: 479RON</span>
                     </div>
                 </li>
-            </div>
-        </ul>
+            </ul>
+        </div>
+
+    </div>
     </div>
     <hr>
     <!-- ================ FOOTER SECTION ================ -->
     <footer>
-        <div class="categories">
-            <ul>
-                <li><a href="#">Men's Shoes</a></li>
-                <li><a href="#">Women's Shoes</a></li>
-                <li><a href="#">Kids' Shoes</a></li>
-                <li><a href="#">Sports Shoes</a></li>
-                <li><a href="#">Casual Shoes</a></li>
-            </ul>
-        </div>
-        <div class="information">
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Return Policy</a></li>
-            </ul>
-        </div>
-        <div class="costumer-service">
-            <ul>
-                <li><a href="#">Shipping Information</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Order Tracking</a></li>
-                <li><a href="#">Payment Methods</a></li>
-                <li><a href="#">Gift Cards</a></li>
-            </ul>
-        </div>
-        <div class="follow-us" style="display: flex;">
-            <span>Follow Us:</span>
-            <div class="social-icons">
+        <section class="footer-section">
+            <div class="categories">
+                <ul>
+                    <li><a href="#">Men's Shoes</a></li>
+                    <li><a href="#">Women's Shoes</a></li>
+                    <li><a href="#">Kids' Shoes</a></li>
+                    <li><a href="#">Sports Shoes</a></li>
+                    <li><a href="#">Casual Shoes</a></li>
+                </ul>
+            </div>
+            <div class="information">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+            <div class="costumer-service">
+                <ul>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Payment Methods</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="follow-us"">
+                <span>Follow Us:</span>
+                <div class=" social-icons">
                 <a href="https://facebook.com"><img src="./icons/facebook.png" alt="" width="20px" height="auto"></a>
                 <a href="https://twitter.com"><img src="./icons/twitter.png" alt="" width="20px" height="auto"></a>
                 <a href="https://instagram.com"><img src="./icons/instagram.png" alt="" width="20px" height="auto"></a>
             </div>
-        </div>
-        <span>Copyright © 2025 About You</span>
+            </div>
+        </section>
+
+        <span class="copyright">Copyright © 2025 About You</span>
     </footer>
 </body>
 

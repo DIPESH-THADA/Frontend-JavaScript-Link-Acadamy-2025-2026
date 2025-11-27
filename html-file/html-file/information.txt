@@ -1,0 +1,6 @@
+Purpose	Color	Hex
+Brand / Buttons	Deep Charcoal	#222831
+Accent Hover / Highlights	Teal	#00ADB5
+Offer Labels / CTA	Soft Gold	#F8B400
+Background	Light Grey	#F3F4F6
+Text	Neutral Grey	#4B5563
