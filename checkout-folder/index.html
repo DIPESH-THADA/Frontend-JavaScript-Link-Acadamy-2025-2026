@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ============ FONT LINK ============= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="../image-folder/logo2.JPG" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Checkout Form</title>
+</head>
+
+<body>
+
+    <header>
+        <section class="header-section">
+            <div class="header__logo">
+                <img src="../image-folder/logo2.JPG" alt="D FASHION HUB LOGO" width="70px" height="auto">
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"><span>Sale!</span></a></li>
+                </ul>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                </div>
+
+                <ul class="header__nav--icons">
+                    <li><a href="./checkout-folder/index.html" class="trolley-a"><img src="../icons-folder/trolley.png"
+                                class="trolley" alt="trolley"><span class="cart-badge" style="color: #fff;">4</span></a>
+                    </li>
+                    <li><a href="../login-folder/index.html"><img src="../icons-folder/user.png" alt="user"></a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <!-- =========== whole body section ============ -->
+
+    <div class="home-login-checkout">
+        <span><a href="../index.html">Home <img src="../icons-folder/arrow.png" alt="right arrow"></a></span>
+        <span><a href="../login-folder/index.html">login <img src="../icons-folder/arrow.png"
+                    alt="right arrow"></a></span>
+        <span class="checkout-span"><a href="../checkout-folder/index.html">Checkout</a></span>
+    </div>
+
+    <h1 class="checkout">Checkout</h1>
+    <main class="main-section">
+
+        <section class="checkout__payment">
+
+            <!-- ============= CHECKOUT FORM ============= -->
+            <form action="URL__for__checkout" class="checkout-form">
+                <fieldset class="checkout-box">
+                    <legend>Address</legend>
+
+
+                    <div class="fullname">
+                        <label for="name"><b>Shipping Information</b></label><br>
+                        <div class="name">
+                            <input type="text" id="name" name="name" required placeholder="Enter First Name">
+                            <input type="text" id="name" name="name" required placeholder="Enter Last Name">
+                        </div>
+                    </div>
+                    <div class="address">
+                        <input type="text" id="address" name="address" required placeholder="Enter Address"><br>
+                        <input type="text" id="apartment" name="apartment" required
+                            placeholder="Enter Apartment, suite, etc.(optional)">
+                    </div>
+
+                    <div class="country-city">
+                        <div class="country">
+                            <label for="country">Country</label><br>
+                            <select name="country" id="country">
+
+                                <option value="Germany"> Germany </option>
+                                <option value="Romania" selected> Romania </option>
+                                <option value="Austria"> Austria </option>
+                            </select>
+                        </div>
+                        <div class="city">
+                            <label for="city">City</label><br>
+                            <select name="city" id="city">
+                                <option value="Timisoara"> Timisoara </option>
+                                <option value="Arad" selected> Arad </option>
+                                <option value="Bucharest"> Bucharest </option>
+                            </select>
+                        </div>
+                        <div class="zip">
+                            <label for="zip">Zip Code</label><br>
+                            <input type="text" id="zip" name="zip" required placeholder="Enter Zip Code">
+                        </div>
+
+                    </div>
+                    <div class="optional">
+                        <input type="text" id="optional" name="optional" placeholder="Optional">
+                        <div class="save-information">
+                            <input type="checkbox" id="save-information" name="save-information"><label
+                                for="save-information">Save Contact Information</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <!-- ============= END OF CHECKOUT FORM ============= -->
+
+            <!-- ============= PAYMENT FORM ============= -->
+            <form action="URL__for__payment" class="payment-form">
+                <fieldset class="payment-box">
+                    <legend>Payment</legend>
+                    <div class="payment">
+                        <button type="button" id="paypal-btn">
+                            <img src="./image/logo.png" alt="Paypal Logo" width="80" height="auto">
+                        </button>
+                        <button type="button" id="cash">Cash</button>
+                    </div>
+
+                    <div class="account-details ">
+                        <div class="cardholder-name">
+                            <label for="cardholder-name">Cardholder Name</label>
+                            <input type="text" id="cardholder-name" name="cardholder-name" required
+                                placeholder="Cardholder Name">
+                        </div>
+                        <div class="card-number">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" name="card-number" required placeholder="Card Number">
+                        </div>
+                    </div>
+                    <div class="month-year-ccv">
+                        <select name="month" id="month">
+                            <option value="month"> Month </option>
+                            <option value="01"> 01 </option>
+                            <option value="02"> 02 </option>
+                            <option value="03"> 03 </option>
+                            <option value="04"> 04 </option>
+                            <option value="05"> 05 </option>
+                            <option value="06"> 06 </option>
+                            <option value="07"> 07 </option>
+                            <option value="08"> 08 </option>
+                            <option value="09"> 09 </option>
+                            <option value="10"> 10 </option>
+                            <option value="11"> 11 </option>
+                            <option value="12"> 12 </option>
+                        </select>
+                        <select name="year" id="year">
+                            <option value="year"> Year </option>
+                            <option value="2025"> 2025 </option>
+                            <option value="2026"> 2026 </option>
+                            <option value="2027"> 2027 </option>
+                            <option value="2028"> 2028 </option>
+                        </select>
+                        <input type="text" id="cvv" name="cvv" required placeholder="CVV">
+                    </div>
+                    <div class="save-information">
+                        <input type="checkbox" id="Payments"><label for="Payments">Save card data for future
+                            payments</label>
+                    </div>
+                </fieldset>
+            </form>
+            <!-- ============= END OF PAYMENT FORM ============= -->
+            <button type="button" id="pay">Pay With Card</button>
+        </section>
+
+        <section class="review-cart">
+            <div class="items-one">
+                <img src="../image-folder/jens decathlons jacket.avif" alt="jens decathlons jacket" width="80px"
+                    height="auto">
+                <div class="item-details">
+                    <table>
+                        <tr>
+                            <td class="product-name">jens decathlons jacket</td>
+                        </tr>
+                        <tr>
+                            <td>Quantity: 1</td>
+                        </tr>
+                        <tr>
+                            <td>Size: M</td>
+                        </tr>
+                    </table>
+                    <div class="qty-control" role="group" aria-label="Quantity">
+                        <button class="qty-btn" data-action="decrease" aria-label="Decrease quantity">−</button>
+                        <input class="qty-input" type="number" min="1" value="1" aria-live="polite" />
+                        <button class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+                    </div>
+                </div>
+                <div class="item-price">
+                    <span>$149.99</span>
+                </div>
+            </div>
+            <hr>
+            <div class="items-one">
+                <img src="../image-folder/ladies casual coat.webp" alt="ladies casual coat" width="80px" height="auto">
+                <div class="item-details">
+                    <table>
+                        <tr>
+                            <td class="product-name">ladies casual coat</td>
+                        </tr>
+                        <tr>
+                            <td>Quantity: 1</td>
+                        </tr>
+                        <tr>
+                            <td>Size: M</td>
+                        </tr>
+                    </table>
+                    <div class="qty-control" role="group" aria-label="Quantity">
+                        <button class="qty-btn" data-action="decrease" aria-label="Decrease quantity">−</button>
+                        <input class="qty-input" type="number" min="1" value="1" aria-live="polite" />
+                        <button class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+                    </div>
+                </div>
+                <div class="item-price">
+                    <span>$129.99</span>
+                </div>
+            </div>
+            <hr>
+            <div class="items-one">
+                <img src="../image-folder/t-shirt.webp" alt="t-shirt" width="80px" height="auto">
+                <div class="item-details">
+                    <table>
+                        <tr>
+                            <td class="product-name">Ladies T-Shirt</td>
+                        </tr>
+                        <tr>
+                            <td>Quantity: 1</td>
+                        </tr>
+                        <tr>
+                            <td>Size: M</td>
+                        </tr>
+                    </table>
+                    <div class="qty-control" role="group" aria-label="Quantity">
+                        <button class="qty-btn" data-action="decrease" aria-label="Decrease quantity">−</button>
+                        <input class="qty-input" type="number" min="1" value="1" aria-live="polite" />
+                        <button class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+                    </div>
+                </div>
+                <div class="item-price">
+                    <span>$29.99</span>
+                </div>
+            </div>
+
+            <div class="items-one">
+                <img src="../image-folder/ladies-skirts.webp" alt="ladies-skirts">
+                <div class="item-details">
+                    <table>
+                        <tr>
+                            <td class="product-name">Ladies Skirts</td>
+                        </tr>
+                        <tr>
+                            <td>Quantity: 1</td>
+                        </tr>
+                        <tr>
+                            <td>Size: M</td>
+                        </tr>
+                    </table>
+                    <div class="qty-control" role="group" aria-label="Quantity">
+                        <button class="qty-btn" data-action="decrease" aria-label="Decrease quantity">−</button>
+                        <input class="qty-input" type="number" min="1" value="1" aria-live="polite" />
+                        <button class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+                    </div>
+                </div>
+                <div class="item-price">
+                    <span>$79.99</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================ FOOTER SECTION ================ -->
+    <footer>
+        <section class="footer-section">
+            <div class="categories">
+                <ul>
+                    <h3>Shop</h3>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Skirts</a></li>
+                    <li><a href="#">Shoes & Bags</a></li>
+                    <li><a href="#">Gifts Cards</a></li>
+                    <li><a href="#">Sales & Offers</a></li>
+                </ul>
+            </div>
+            <div class="information">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Delivery & Returns</a></li>
+                </ul>
+            </div>
+            <div class="customer-service">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Payment Methods</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="social-icon">
+            <span class="copyright">Copyright © 2025 About You</span>
+            <div class="follow-us"">
+                <span>Follow Us:</span>
+                <div class=" social-icons">
+                <a href="https://facebook.com"><img src="../icons-folder/facebook.png" alt="facebook" width="20px"
+                        height="auto"></a>
+                <a href="https://twitter.com"><img src="../icons-folder/twitter.png" alt="twitter" width="20px"
+                        height="auto"></a>
+                <a href="https://instagram.com"><img src="../icons-folder/instagram.png" alt="instagram" width="20px"
+                        height="auto"></a>
+                <a href="https://instagram.com"><img src="../icons-folder/tik-tok.png" alt="tik-tok" width="20px"
+                        height="auto"></a>
+            </div>
+            </div>
+        </section>
+
+
+    </footer>
+</body>
+
+</html>

@@ -4,11 +4,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- ============ FONT LINK ============= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- ========= LINK CSS FILE ========== -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- ========= LOGO ICON ========= -->
+    <link rel="shortcut icon" type="image/png" href="./image-folder/logo2.JPG" />
+    <title>D FASHION HUB</title>
 </head>
 
 <body>
+    <!-- ============= HEADER =============== -->
+    <header>
+        <section class="header-section">
+            <div class="header__logo">
+                <img src="./image-folder/logo2.JPG" alt="D FASHION HUB LOGO" width="70px" height="auto">
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"><span>Sale!</span></a></li>
+                </ul>
 
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                </div>
+
+                <ul class="header__nav--icons">
+                    <li><a href="./checkout-folder/index.html" class="trolley-a"><img src="./icons-folder/trolley.png"
+                                class="trolley" alt="trolley"><span class="cart-badge" style="color: #fff;">4</span></a>
+                    </li>
+                    <li><a href="./login-folder/index.html"><img src="./icons-folder/user.png" alt="user"></a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <div class="home-login-checkout">
+        <span><a href="./index.html">View All <img src="./icons-folder/arrow.png" alt="right arrow"></a></span>
+        <span><a href="./login-folder/index.html">login <img src="./icons-folder/arrow.png"
+                    alt="right arrow"></a></span>
+        <span class="checkout-span"><a href="./checkout-folder/index.html">Checkout</a></span>
+    </div>
+
+    <h1 class="checkout">View All Product</h1>
+
+    <div class="grid">
+        <img src="./icons-folder/square.png" alt="squre">
+        <img src="./icons-folder/layout.png" alt="layout">
+        <img src="./icons-folder/grid.png" alt="grid">
+    </div>
+
+    <div class="showing-sort">
+        <span class="showing-items">Showing 13-24 of 312 items</span>
+        <div class="sort"><span class="showing-items">Short by most popular</span> <img src="./icons-folder/sort.png"
+                alt="sort"></div>
+    </div>
+    <main class="main-content">
+        <section class="section-aside">
+            <aside>
+
+                <h3 class="filter">Filters</h3>
+                <div class="price1">
+                    <span>Price</span>
+                    <img src="./icons-folder/right.png" alt="right-arrow" width="18px">
+                </div>
+                <div class="brands">
+                    <div class="price1">
+                        <span>Brand</span>
+                        <img src="./icons-folder/down.png" alt="down-arrow" width="18px">
+                    </div>
+                    <div class="zara">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div><span>ZARA</span>
+                    </div>
+                    <div class="zara">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div><span>H&M</span>
+                    </div>
+                    <div class="zara">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div><span>BERSKHA</span>
+                    </div>
+                    <div class="zara">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div><span>KOTON</span>
+                    </div>
+                </div>
+
+                <div class="brands">
+                    <div class="price1">
+                        <span>Categiries</span>
+                        <img src="./icons-folder/down.png" alt="down-arrow" width="18px">
+                    </div>
+                    <div class="zara">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div><span>Pants</span>
+                    </div>
+                    <div class="zara">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div><span>T-shirts</span>
+                    </div>
+                    <div class="zara">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div><span>Jackets</span>
+                    </div>
+                    <div class="zara">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div><span>Skirts</span>
+                    </div>
+                    <div class="zara">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div><span>All Items</span>
+                    </div>
+                </div>
+
+                <div class="brands">
+                    <div class="price1">
+                        <span>Brand</span>
+                        <img src="./icons-folder/down.png" alt="down-arrow" width="18px">
+                    </div>
+                    <div class="zara">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div><span>ZARA</span>
+                    </div>
+                    <div class="zara">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div><span>H&M</span>
+                    </div>
+                </div>
+
+                <div class="price1">
+                    <span>Color</span>
+                    <img src="./icons-folder/right.png" alt="right-arrow" width="18px">
+                </div>
+
+                <div class="price1">
+                    <span>Other</span>
+                    <img src="./icons-folder/right.png" alt="right-arrow" width="18px">
+                </div>
+            </aside>
+
+            <button class="apply-btn">Apply Filter</button>
+        </section>
+
+        <section class="product-section">
+            <div class="product-items">
+                <img src="./image-folder/jens decathlons jacket.avif" alt="jens decathlons jacket">
+                <div class="details">
+                    <span>Jens Decathlons Jacket</span>
+                    <span>$229.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+            <div class="product-items">
+                <img src="./image-folder/ladies casual coat.webp" alt="ladies casual coat"">
+                <div class=" details">
+                <span>Ladies Casual Coat</span>
+                <span>$129.99</span>
+            </div>
+            <button class="cart-btn">Add To Cart</button>
+            </div>
+            <div class="product-items">
+                <img src="./image-folder/t-shirt.webp" alt="t-shirt">
+                <div class="details">
+                    <span>ladies T-shirt</span>
+                    <span>$29.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+
+            <div class="product-items">
+                <img src="./image-folder/ladies-skirts.webp" alt="ladies-skirts">
+                <div class="details">
+                    <span>ladies Skirt</span>
+                    <span>$79.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+
+            <div class="product-items">
+                <img src="./image-folder/jens-jeans.webp" alt="jens-jeans">
+                <div class="details">
+                    <span>Jens Jens</span>
+                    <span>$59.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+
+            <div class="product-items">
+                <img src="./image-folder/top-ware.webp" alt="ladies-top-ware">
+                <div class="details">
+                    <span>Ladies Top Ware</span>
+                    <span>$39.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+
+            <div class="product-items">
+                <img src="./image-folder/mens t-shirts.webp" alt="mens-t-shirt">
+                <div class="details">
+                    <span>Mens T-shirt</span>
+                    <span>$19.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+
+            <div class="product-items">
+                <img src="./image-folder/mens-hoodi.webp" alt="mens hoodi">
+                <div class="details">
+                    <span>Mens Hoodi</span>
+                    <span>$39.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+
+            <div class="product-items">
+                <img src="./image-folder/mens-sweeter.jpg" alt="mens sweeter">
+                <div class="details">
+                    <span>Mens Sweeter</span>
+                    <span>$44.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+
+            <div class="product-items">
+                <img src="./image-folder/mens-leather-jacket.webp" alt="Mens leather jackets">
+                <div class="details">
+                    <span>Mens Jeather Jacket</span>
+                    <span>$229.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+
+            <div class="product-items">
+                <img src="./image-folder/ladies-sweeter.jpg" alt="ladies-sweeter">
+                <div class="details">
+                    <span>ladies Sweeter</span>
+                    <span>$79.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+
+            <div class="product-items">
+                <img src="./image-folder/mens-suede-shoe.webp" alt="mens suede shoe">
+                <div class="details">
+                    <span>Mens Suedue Shoe</span>
+                    <span>$79.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+
+            <div class="product-items">
+                <img src="./image-folder/mens-shorts.webp" alt="mens short">
+                <div class="details">
+                    <span>Mens short</span>
+                    <span>$59.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+
+            <div class="product-items">
+                <img src="./image-folder/mens-partyware-shoe.webp" alt="mens mens-partyware-shoe">
+                <div class="details">
+                    <span>Mens Suedue Shoe</span>
+                    <span>$79.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+
+            <div class="product-items">
+                <img src="./image-folder/Cheyanne - Elegant cashmere sweater for women.webp"
+                    alt="Cheyanne - Elegant cashmere sweater for women">
+                <div class="details">
+                    <span>Cheyanne - Elegant cashmere sweater for women</span>
+                    <span>$179.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+
+            <div class="product-items">
+                <img src="./image-folder/Franca – Refined midi dress with classic cut.webp"
+                    alt="Franca – Refined midi dress with classic cut">
+                <div class="details">
+                    <span>Franca – Refined midi dress with classic cut</span>
+                    <span>$159.99</span>
+                </div>
+                <button class="cart-btn">Add To Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================ FOOTER SECTION ================ -->
+    <footer>
+        <section class="footer-section">
+            <div class="categories">
+                <ul>
+                    <h3>Shop</h3>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Skirts</a></li>
+                    <li><a href="#">Shoes & Bags</a></li>
+                    <li><a href="#">Gifts Cards</a></li>
+                    <li><a href="#">Sales & Offers</a></li>
+                </ul>
+            </div>
+            <div class="information">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Delivery & Returns</a></li>
+                </ul>
+            </div>
+            <div class="customer-service">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Payment Methods</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="social-icon">
+            <span class="copyright">Copyright © 2025 About You</span>
+            <div class="follow-us"">
+                <span>Follow Us:</span>
+                <div class=" social-icons">
+                <a href="https://facebook.com"><img src="./icons-folder/facebook.png" alt="facebook" width="20px"
+                        height="auto"></a>
+                <a href="https://twitter.com"><img src="./icons-folder/twitter.png" alt="twitter" width="20px"
+                        height="auto"></a>
+                <a href="https://instagram.com"><img src="./icons-folder/instagram.png" alt="instagram" width="20px"
+                        height="auto"></a>
+                <a href="https://instagram.com"><img src="./icons-folder/tik-tok.png" alt="tik-tok" width="20px"
+                        height="auto"></a>
+            </div>
+            </div>
+        </section>
+
+
+    </footer>
 </body>
 
 </html>
