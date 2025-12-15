@@ -10,6 +10,7 @@
   --color-dark: #1a1d21;
   --color-grey: #9ca3af;
   --footer-bg-color: #dff2eb;
+  --gradient-color: linear-gradient(to left, #00ccdd, #62109f);
 
   /* hover transition */
   --transition-hover: all 0.3s ease;
@@ -149,15 +150,15 @@ header .header__logo {
 .cart-badge {
   position: absolute;
   top: -8px;
-  right: -8px;
-  width: 20px;
-  height: 20px;
+  right: -10px;
+  width: 15px;
+  height: 15px;
   padding: 0 6px;
   background: var(--color-accent);
   color: var(--color-white);
   font-size: 10px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 18px;
   text-align: center;
   border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
@@ -186,22 +187,28 @@ header .header__logo {
 .header__nav ul {
   display: flex;
   align-items: center;
-  gap: 10px;
+  margin-right: 20px;
 }
 
-.header__nav li img {
-  width: 30px;
+nav .header__nav--icons ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header__nav--icons a i {
+  font-size: 20px;
   height: auto;
+  color: var(--color-secondary);
+  transition: var(--transition-hover);
+}
+
+.header__nav--icons a i:hover {
+  color: #7132ca;
 }
 
 .logo {
   margin-left: 30px;
-}
-
-nav .header__nav--icons {
-  display: flex;
-  gap: 10px !important;
-  margin-right: 20px;
 }
 
 /* ==========  FOOTER SECTION =========== */
@@ -210,7 +217,7 @@ footer {
   background-color: var(--footer-bg-color);
   color: var(--text-light);
   padding: 15px 0;
-  margin-top: 40px;
+  margin-top: 70px;
   margin-bottom: 0;
   width: 100%;
   bottom: 0;
@@ -379,13 +386,13 @@ footer .copyright:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .zara input[type="checkbox"] {
-  width: 14px;
-  height: 14px;
-  accent-color: var(--color-dark);
+  width: 15px;
+  height: 15px;
+  accent-color: var(--color-secondary);
 }
 
 .zara span {
@@ -394,7 +401,7 @@ footer .copyright:hover {
   transition: color 0.2s ease;
 }
 
-.zara input[type="checkbox"]:checked ~ span:hover {
+.zara :has(input[type="checkbox"]:checked) ~ span:hover {
   color: var(--color-dark);
   font-weight: 500;
 }
@@ -507,4 +514,50 @@ footer .copyright:hover {
   background-color: var(--color-secondary);
   color: var(--color-white);
   border: none;
+}
+
+.price_favorite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price_favorite img {
+  width: 25px;
+  height: auto;
+  margin-right: 15px;
+}
+
+/* ============ BACK TO TOP CONTENT ========== */
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: var(--color-secondary);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 1rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  /* display: none; */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.back-to-top span {
+  color: var(--color-secondary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  position: sticky;
+  z-index: 1000;
+}
+
+.back-to-top img {
+  width: 20px;
+  height: auto;
+  position: sticky;
+  z-index: 1000;
+  margin-left: 10px;
 }

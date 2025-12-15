@@ -1,0 +1,29 @@
+.checkout-product-section {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.favorite {
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.favorite-items {
+  background-color: var(--color-light);
+  width: 260px;
+  height: 450px;
+  box-shadow: var(--shadow-medium);
+  border-radius: 15px;
+}
+
+.favorite-items img {
+  width: 230px;
+  height: auto;
+  margin-left: 15px;
+  /* border-radius: 15px; */
+  margin-top: 8px;
+}
