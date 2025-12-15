@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ============= icons Ccdn ============ -->
+    <script src="https://kit.fontawesome.com/e7ef4b81f7.js" crossorigin="anonymous"></script>
+
 
     <!-- ============ FONT LINK ============= -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,10 +44,13 @@
                 </div>
 
                 <ul class="header__nav--icons">
-                    <li><a href="./checkout-folder/index.html" class="trolley-a"><img src="./icons-folder/trolley.png"
-                                class="trolley" alt="trolley"><span class="cart-badge" style="color: #fff;">4</span></a>
+                    <li><a href="./checkout-folder/index.html" class="trolley-a"><i
+                                class="fa-solid fa-cart-arrow-down"></i><span class="cart-badge"
+                                style="color: #fff;">4</span></a>
                     </li>
-                    <li><a href="./login-folder/index.html"><img src="./icons-folder/user.png" alt="user"></a></li>
+                    <li><a href="./login-folder/index.html"><i class="fa-regular fa-circle-user"></i></a></li>
+
+                    <li><a href="./favorite-items/index.html"><i class="fa-solid fa-heart"></i></a></li>
                 </ul>
             </nav>
         </section>
@@ -174,11 +180,14 @@
                 <img src="./image-folder/jens decathlons jacket.avif" alt="jens decathlons jacket">
                 <div class="details">
                     <span>Jens Decathlons Jacket</span>
-                    <span>$229.99</span>
+                    <div class="price_favorite">
+                        <span>$229.99</span>
+                        <button class="heart"><img src="./icons-folder/heart.png" alt="add to favorite"></button>
+                    </div>
                 </div>
                 <button class="cart-btn">Add To Cart</button>
             </div>
-            <div class="product-items">
+            <!-- <div class="product-items">
                 <img src="./image-folder/ladies casual coat.webp" alt="ladies casual coat"">
                 <div class=" details">
                 <span>Ladies Casual Coat</span>
@@ -312,7 +321,7 @@
                     <span>$159.99</span>
                 </div>
                 <button class="cart-btn">Add To Cart</button>
-            </div>
+            </div> -->
         </section>
     </main>
 
