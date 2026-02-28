@@ -1,6 +1,6 @@
 "use strict";
 
-import { items } from "./data.js";
+import { allProducts } from "./data.js";
 // ================= 1. GLOBAL letIABLES & CONSTANTS =====================
 
 // Tax & currency constants
@@ -102,7 +102,7 @@ const renderItems = function (items) {
   });
 };
 
-renderItems(items);
+renderItems(allProducts);
 
 // =============== ADD TO CART FUNCTION =================
 function addToCart(price) {
@@ -126,10 +126,10 @@ function searchItemsByName(term) {
   if (!itemContainer) return;
   const inputName = term.trim().toLowerCase();
   if (!inputName) {
-    renderItems(items);
+    renderItems(allProducts);
     return;
   }
-  const results = items.filter((result) =>
+  const results = allProducts.filter((result) =>
     result.name.toLowerCase().includes(inputName),
   );
   if (results.length) {
@@ -153,24 +153,44 @@ if (form && search) {
   });
 }
 
-// Write a function that calculates the total value of all products in stock:
-// − For each product, calculate price * qty.
-// − Add all the values into a totalValue variable.
-// − display in the cantilever, for example, "Total stock value: $5420."
-// 7. Create a new lowStock string that:
-// − contains only products for which qty < 10;
-// − Once you've formed the lowStock string, display it in the console
-
+// ================ CALCULATE TOTAL STOCK VALUE ====================
 function calculateTotalStockValue() {
   let totalValue = 0;
   let lowStock = [];
-  items.forEach((item) => {
+  allProducts.forEach((item) => {
     totalValue += item.price * item.quantity;
     if (item.quantity < 10) {
       lowStock.push(item.name);
     }
   });
+let totalQuantity = 0;
+
+for (let i = 0; i < allProducts.length; i++) {
+  totalValue += allProducts[i].price * allProducts[i].quantity;
+  totalQuantity += allProducts[i].quantity;
+}
+
   console.log("Total stock value: RON " + totalValue.toFixed(2));
-  console.log("Low stock items: " + lowStock.join(", "));
+  console.log("Low stock allProducts: " + lowStock.join(", "));
+  console.log("Total number of products: " + allProducts.length);
+  console.log(
+    "Average price per product: RON " +
+      (totalValue / allProducts.length).toFixed(2),
+  );
+
+  console.log("average price per item: RON " + (totalValue / totalQuantity).toFixed(2));
+
+  console.log(
+    "Most expensive product: " +
+      allProducts.reduce((max, item) => (item.price > max.price ? item : max))
+        .name + " (RON " + allProducts.reduce((max, item) => (item.price > max.price ? item : max)).price.toFixed(2) + ")",
+  );
+  console.log(
+    "total quantity of items in stock: " +
+      allProducts.reduce((sum, item) => sum + item.quantity, 0),
+  );
+  console.log(
+    totalValue > 10000 ? "Stock value is high." : "Stock value is manageable.",
+  );
 }
 calculateTotalStockValue();

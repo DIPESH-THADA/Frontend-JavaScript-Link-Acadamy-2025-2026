@@ -1,4 +1,4 @@
-export const items = [
+export const allProducts = [
   {
     image: "assets/images/jens decathlons jacket.avif",
     name: "Jens Jecathlons Jacket",

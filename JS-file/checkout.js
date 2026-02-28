@@ -15,6 +15,57 @@
 // const PRODUCT3_PRICE = 229.99; // number (in RON)
 // const PRODUCT3_QTY = 1;
 
+// Create an allProducts associative string with:
+// − the name, price and quantity of all the products in your e-commerce store (enough to
+// have up to 10 products)
+
+const allProducts = {
+  "Jens Decathlons Jacket": {
+    price: 149.99,
+    quantity: 7,
+  },
+  "Ladies Casual Coat": {
+    price: 129.99,
+    quantity: 3,
+  },
+  "Mens Suede Shoe": {
+    price: 229.99,
+    quantity: 6,
+  },
+  "Karl Lagerfeld Sneaker": {
+    price: 199.99,
+    quantity: 4,
+  },
+  "Adidas Running Shoe": {
+    price: 89.99,
+    quantity: 10,
+  },
+  "Nike Air Max": {
+    price: 119.99,
+    quantity: 8,
+  },
+  "Puma Sports Shoe": {
+    price: 79.99,
+    quantity: 12,
+  },
+  "Reebok Classic": {
+    price: 99.99,
+    quantity: 15,
+  },
+  "Converse All Star": {
+    price: 59.99,
+    quantity: 4,
+  },
+  "Vans Old Skool": {
+    price: 69.99,
+    quantity: 9,
+  },
+  "Ladies Casual Coat": {
+    price: 129.99,
+    quantity: 10,
+  },
+};
+
 const productNames = [
   "Jens Decathlons Jacket",
   "Ladies Casual Coat",
@@ -45,7 +96,18 @@ function addToSum(index) {
 // console.log("Total initial: $" + totalPrice.toFixed(2));
 
 // Raw coupon
-const VALID_COUPONS = ["SAVE10", "SAVE15", "FREESHIP"];
+const VALID_COUPONS = [
+  "SAVE10",
+  "SAVE15",
+  "FREESHIP",
+  "CHRISRMAS20",
+  "NEWYEAR25",
+  "WINTEROFFER",
+  "SUMMERSALE30",
+  "FALLDISCOUNT15",
+  "SPRINGDEAL20",
+  "BLACKFRIDAY50",
+];
 
 // =============== 2. NORMALIZE COUPON FUNCTION =================
 function normalizeCoupon(code) {
@@ -89,10 +151,30 @@ function validateAndNotify() {
         "Coupon applied successfully! You get free shipping on your order.",
       );
       break;
+    case "CHRISRMAS20":
+      alert("Coupon applied successfully! You saved 20% on your order.");
+      break;
+    case "NEWYEAR25":
+      alert("Coupon applied successfully! You saved 25% on your order.");
+      break;
+    case "WINTEROFFER":
+      alert("Coupon applied successfully! You can get 1 free item.");
+      break;
+    case "SUMMERSALE30":
+      alert("Coupon applied successfully! You saved 30% on your order.");
+      break;
+    case "FALLDISCOUNT15":
+      alert("Coupon applied successfully! You saved 15% on your order.");
+      break;
+    case "SPRINGDEAL20":
+      alert("Coupon applied successfully! You saved 20% on your order.");
+      break;
+    case "BLACKFRIDAY50":
+      alert("Coupon applied successfully! You saved 50% on your order.");
+      break;
     default:
       alert("Invalid coupon code. Please try again.");
   }
-
   // clear input after validation
   promoInput.value = "";
 }
